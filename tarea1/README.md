@@ -1,7 +1,7 @@
 # TAREA 1 - Administración de Proyectos de Software
 
-1.¿Qué es un proyecto de software? Proyecto frente a operación continua; proyecto, producto y
-proceso; alcance, tiempo, costo y calidad.
+**1.¿Qué es un proyecto de software? Proyecto frente a operación continua; proyecto, producto y
+proceso; alcance, tiempo, costo y calidad.**
 
 Consiste en todo un proceso desde diseñar, desarrollar e implementar un tipo de solución con el fin de resolver un determinado problema o en otro caso mejorar dicho proceso, a diferencia de una operación contínua este es temporal comenzando persiguiendo un objetivo finalizando al hacer la entrega del producto
 
@@ -18,8 +18,8 @@ En el alcance se presentan los entregables y tareas que deberán cumplirse para 
 
 
 
-2.¿Cómo se administra? Qué son la Guía del PMBOK y Scrum, y en qué se distinguen los modelos
-predictivo, iterativo y ágil. Cuál elegiría para un proyecto como el del curso.
+**2.¿Cómo se administra? Qué son la Guía del PMBOK y Scrum, y en qué se distinguen los modelos
+predictivo, iterativo y ágil. Cuál elegiría para un proyecto como el del curso.**
 
 Para administrar un proyecto de software se requiere un enfoque de planificación, organización y supervisión de tareas y recursos que ayudará a lograr los objetivos dentro del tiempo límite que se le asigna a un proyecto.
 
@@ -32,19 +32,40 @@ En los modelos predictivos se asume que los requisitos son claros desde un inici
 * Gurnov, A., & Wrike. (2026, 30 abril). ¿Qué es PMBOK en gestión de proyectos? Conoce la metodología PMBOK. Wrike. https://www.wrike.com/es/project-management-guide/faq/que-es-pmbok-en-gestion-de-proyectos/
 
 
-3.¿Con qué herramientas? Para qué sirven el control de versiones, los tableros de trabajo, los
+**3.¿Con qué herramientas? Para qué sirven el control de versiones, los tableros de trabajo, los
 contenedores y la integración continua. Y las del curso: Docker frente a una máquina virtual,
-Dockerfile frente a compose.yaml, el volumen, y los comandos up -d, exec, stop, down, ps y logs.
+Dockerfile frente a compose.yaml, el volumen, y los comandos up -d, exec, stop, down, ps y logs.**
 
-4. ¿Bajo qué licencia se distribuye el software? Todo programa tiene una licencia que dice qué puede
+El control de versiones nos ayuda a tener un seguimiento de cada cambio que se haya realizado al código, ayuda principalmente para tener todo el historial y poder acceder a él en cualquier momento. En los tableros de trabajo podemos estructurar todos los procesos necesarios de inicio a fin con el fin de organizar las estapas a modo de llevar el conrol específico de cada tema. Los contenedores nos permiten empaquetar y ailas las aplicaiones con todo el entorno que requieran para su ejecución, así hace más fácil su portabilidad gracias a la ligereza de este.
+
+A diferencia de una máquina virtual, los contenedores comparten el kernel del sistema operativo haciendolo más ligero y rápido, en este se crean imágenes personalizadas, definiendo el so base, las dependias a instalar, variables de entorno y comandos para compilar la app, mientras que el compose.yaml funciona como orquestación para correr aplicaciones multi-contenedor, aquí se define la relación, volúmen y red de todos los servicios en ese solo archivo. Comandos como:
+
+up -d: Crea, enciende y conecta los servicios definidos, el -d sirve para liberar la consola mientras se ejecuta en segundo plano
+
+exec: Sirve para ejecuar un comando dentro del contenedor que ya está funcionando, uno muy común es docker compose exec < servicio > bash  para abrir terminal dentro del cont.
+
+stop: detiene los contendores sin eliminarlos, los datos se detienen emperando ser reactivado con un start
+
+down: Aquí si detiene y borra por completo el contenedor, se puede proteger los volúmenes que se agreguen con la bandera -v
+
+ps: Nos muestra el estao actual en el que se encuentran los contenedores asociados al proyecto, junto con sus puertos
+
+logs: Muestra la salida estandar y de error de los contenedores sirven para depurar fallos
+
+
+* GitLab. (s. f.). ¿Qué es el control de versiones? GitLab. https://about.gitlab.com/es/topics/version-control/
+
+* Explicación sobre los contenedores: concepto e importancia. (s. f.). https://www.redhat.com/es/topics/containers
+
+**4.¿Bajo qué licencia se distribuye el software? Todo programa tiene una licencia que dice qué puede
 hacer con él quien lo recibe —usarlo, modificarlo, redistribuirlo, venderlo— y con qué obligaciones.
-Usted eligió una al crear su repositorio. Investigue:
+Usted eligió una al crear su repositorio. Investigue:**
 
-    a)  Los dos grandes tipos. Qué es una licencia permisiva (MIT, BSD, Apache 2.0) y qué es una copyleft (GPL, LGPL, AGPL). Una tabla con lo que permite y lo que exige cada una.
+  a)  Los dos grandes tipos. Qué es una licencia permisiva (MIT, BSD, Apache 2.0) y qué es una copyleft (GPL, LGPL, AGPL). Una tabla con lo que permite y lo que exige cada una.
 
-    b) Su elección. Por qué su repositorio usa MIT, qué ventajas tiene y qué cambiaría si hubiera elegido GPL.
+  b) Su elección. Por qué su repositorio usa MIT, qué ventajas tiene y qué cambiaría si hubiera elegido GPL.
 
-    c) Un caso real, a elegir, en que la decisión de la empresa dueña de un proyecto llevó a sus usuarios a crear o adoptar una alternativa:
+  c) Un caso real, a elegir, en que la decisión de la empresa dueña de un proyecto llevó a sus usuarios a crear o adoptar una alternativa:
     – MySQL, que pasó a manos de Oracle, y MariaDB.
     – El JDK de Oracle, que empezó a cobrarse para uso comercial, y OpenJDK o Amazon Corretto.
     – CentOS, que Red Hat sustituyó por CentOS Stream, y AlmaLinux o Rocky Linux.
