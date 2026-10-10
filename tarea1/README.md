@@ -21,8 +21,18 @@ En el alcance se presentan los entregables y tareas que deberán cumplirse para 
 2.¿Cómo se administra? Qué son la Guía del PMBOK y Scrum, y en qué se distinguen los modelos
 predictivo, iterativo y ágil. Cuál elegiría para un proyecto como el del curso.
 
+Para administrar un proyecto de software se requiere un enfoque de planificación, organización y supervisión de tareas y recursos que ayudará a lograr los objetivos dentro del tiempo límite que se le asigna a un proyecto.
 
-3. ¿Con qué herramientas? Para qué sirven el control de versiones, los tableros de trabajo, los
+La guía del PMBOK contiene una colección completa de fundamentos para la dirección de proyectos donde se encuentran consejos de mejores prácticas, terminología y directirces que existen en el estándar de la gestión de proyectos. Mientras que SCRUM es una de las metodologías más populares que proporcionan ayuda para la elaboración de proyectos complejos diviendo los trabajos en ciclos iterativos más pequeños.
+
+En los modelos predictivos se asume que los requisitos son claros desde un inicio, las fases del proyecto van en secuencia lo que no permite avanzar a una fase posterior sin haber terminado las anteriores, por otro lado en el modo iterativo se construye mediante ciclos repetitivos con el fin de pulir detalles haciendo que en cada uno se mejore la calidad de este, finalmente en el modelo ágil como podría ser SCRUM combina un poco ambos modelos enfocandose más en la velocidad de respuesta y la maximización del valor final, dado esto me inclinaría más por este último modelo mencionado considerando sus beneficios y su uso en el mercado actual
+
+* Jaimovich, D. (2024, 21 octubre). Las 5 fases de la gestión de proyectos. Administracion de Proyectos. https://blog.invgate.com/es/fases-de-la-gestion-de-proyectos
+
+* Gurnov, A., & Wrike. (2026, 30 abril). ¿Qué es PMBOK en gestión de proyectos? Conoce la metodología PMBOK. Wrike. https://www.wrike.com/es/project-management-guide/faq/que-es-pmbok-en-gestion-de-proyectos/
+
+
+3.¿Con qué herramientas? Para qué sirven el control de versiones, los tableros de trabajo, los
 contenedores y la integración continua. Y las del curso: Docker frente a una máquina virtual,
 Dockerfile frente a compose.yaml, el volumen, y los comandos up -d, exec, stop, down, ps y logs.
 
