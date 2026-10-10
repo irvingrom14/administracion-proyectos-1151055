@@ -7,6 +7,6 @@
 ### 10 de Octubre 2026
 
 ## Tareas
-* [Tarea 1.md](../tarea1/README.md)
+* [Tarea 1.md](/tarea1/README.md)
 
 Repositorio de Administracion de Proyectos de Software 
