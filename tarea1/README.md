@@ -1,9 +1,24 @@
 # TAREA 1 - Administración de Proyectos de Software
 
-1. ¿Qué es un proyecto de software? Proyecto frente a operación continua; proyecto, producto y
+1.¿Qué es un proyecto de software? Proyecto frente a operación continua; proyecto, producto y
 proceso; alcance, tiempo, costo y calidad.
 
-2. ¿Cómo se administra? Qué son la Guía del PMBOK y Scrum, y en qué se distinguen los modelos
+Consiste en todo un proceso desde diseñar, desarrollar e implementar un tipo de solución con el fin de resolver un determinado problema o en otro caso mejorar dicho proceso, a diferencia de una operación contínua este es temporal comenzando persiguiendo un objetivo finalizando al hacer la entrega del producto
+
+Un proceso es la forma en que se va organizar una operación este tiene que estar bien estructurado para garatinzar la consistencia y la calidad de las operaciones, como mencionaba antes, el proyecto tiene un tiempo definido con fines claros y entregables específicos, por último el producto es el resultado de la conclusión de este
+
+En el alcance se presentan los entregables y tareas que deberán cumplirse para lograr los objetivos del proyecto este puede cambiar durante la realización del proyecto, el costo es el presupuesto que se tiene para desarrollar el proyecto incluyendo salario de empleados, equipo, herramientas, esapcios y cual otro recurso que sea necesario, el tiempo es lo que tardará un proyecto en completarse este podrá aumentar o disminuir dependiendo el alcance que se le de al proyecto, finalmente la calidad será el grado en que el resultado del proyecto cumple con los requisitos que se acordaron en el proyecto
+
+
+* Arcus. (2026, 30 agosto). Guía de tipos de proyectos de software y cómo desarrollarlos. Arcus Blog. https://www.arcusway.com/post/guia-de-tipos-de-proyectos-de-software-y-como-desarrollarlos
+
+* Guía de gestión de procesos vs gestión de proyectos. (s. f.). https://www.larksuite.com/es_mx/blog/process-management-vs-project-management
+
+* Staff, C. (2026, 11 junio). ¿Qué es el triángulo de oro de gestión de proyectos? Coursera. https://www.coursera.org/mx/articles/project-management-triangle
+
+
+
+2.¿Cómo se administra? Qué son la Guía del PMBOK y Scrum, y en qué se distinguen los modelos
 predictivo, iterativo y ágil. Cuál elegiría para un proyecto como el del curso.
 
 
