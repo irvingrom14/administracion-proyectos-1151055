@@ -138,3 +138,40 @@ Innovation (Innovación): Son versiones de ciclo de vida corto que se liberan fr
 Por qué usar mysql:9.7.2 en lugar de mysql:latest
 
 El escribir la versión directamente asegura que el entorno de desarrollo se idéntico en cualquier PC, por lo que si otro desarrrollador clona el proyecto levvantará el mismo motor y no la última versión de este usuario, así mismo previene rupturas con el tiempo y las nuevas versiones que se lanzen posteriormente
+
+---
+
+## Capturas de pantalla
+
+1. PostgreSQL 17: up -d --build con el aviso de version.
+
+
+![Imagen 1](img/Cap1.png).
+
+2. PostgreSQL 17: ps y SELECT version();.
+
+![Imagen 2](img/Cap2.png).
+
+3. PostgreSQL 18: ps con (healthy) y SELECT version();.
+
+![Imagen 3](img/Cap3.png).
+
+4. PostgreSQL 18: Adminer con las tablas.
+
+![Imagen 4](img/Cap4.png).
+
+5. El diff de la confirmación a la 18, en GitHub.
+
+![Imagen 5](img/Cap5.png).
+
+6. phpMyAdmin con SELECT VERSION();.
+
+![Imagen 6](img/Cap6.png).
+
+7. Docker Desktop con los dos stacks encendidos.
+
+![Imagen 7](img/Cap7.png).
+
+8. El historial de confirmaciones en GitHub.
+
+![Imagen 8](img/Cap8.png).
