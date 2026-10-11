@@ -16,6 +16,8 @@ En el alcance se presentan los entregables y tareas que deberán cumplirse para 
 
 * Staff, C. (2026, 11 junio). ¿Qué es el triángulo de oro de gestión de proyectos? Coursera. https://www.coursera.org/mx/articles/project-management-triangle
 
+---
+
 
 
 **2.¿Cómo se administra? Qué son la Guía del PMBOK y Scrum, y en qué se distinguen los modelos
@@ -31,6 +33,7 @@ En los modelos predictivos se asume que los requisitos son claros desde un inici
 
 * Gurnov, A., & Wrike. (2026, 30 abril). ¿Qué es PMBOK en gestión de proyectos? Conoce la metodología PMBOK. Wrike. https://www.wrike.com/es/project-management-guide/faq/que-es-pmbok-en-gestion-de-proyectos/
 
+---
 
 **3.¿Con qué herramientas? Para qué sirven el control de versiones, los tableros de trabajo, los
 contenedores y la integración continua. Y las del curso: Docker frente a una máquina virtual,
@@ -56,6 +59,10 @@ logs: Muestra la salida estandar y de error de los contenedores sirven para depu
 * GitLab. (s. f.). ¿Qué es el control de versiones? GitLab. https://about.gitlab.com/es/topics/version-control/
 
 * Explicación sobre los contenedores: concepto e importancia. (s. f.). https://www.redhat.com/es/topics/containers
+
+
+---
+
 
 **4.¿Bajo qué licencia se distribuye el software? Todo programa tiene una licencia que dice qué puede
 hacer con él quien lo recibe —usarlo, modificarlo, redistribuirlo, venderlo— y con qué obligaciones.
@@ -98,3 +105,18 @@ Contaba con la licencia GPL por lo que a pesar de que Oracle compró la marca de
 * Tal, L. (2020, 16 julio). Open Source Licenses: Types and Comparison. Snyk. https://snyk.io/articles/open-source-licenses/
 
 * Krohalev, R. (2026, 29 septiembre). Software licenses explained: MIT, BSD, Apache, GPL. Shakuro. https://shakuro.com/blog/software-licenses-explained  
+
+---
+
+## PostgreSQL 17 a 18
+
+| Diferencias | PostgreSQL 17 | PostgreSQL 18 |
+| :--- | :--- | :--- |
+| Versión | Muestra el mensaje de atributo obsoleto| Aquí ya no muesra ese mensaje ya que el .yaml eliminó ese atributo |
+| Levantar el servicio | Se levanta un único contenedor de la base de atos a aprtir de la imágen | aquí se levantan dos contenedores, la bd y el gestor gráfico |
+| Estado de salud | Por su configuración más básica solo se ve el tiempo de actividad | Aquí se muestar el mensaje "healthy" lo que indica que el archivo compose.yaml iene configurado un healthcheck |
+
+No se usaba el Dockerfile viejo ya que como se observa a pesar de ejecutar el comando con la instrucción de construccion "docker compose up -d --build" el sistema solo mostró la imagen de postgres 17 Pulled, si en la config del archivo .yml estuviera apuntando a un DOckerfile se hubiera mostrado la construcción de la imagen
+
+El versionado semántico es un sistema  estámdar para numerar las versiones del software basándose en la estructura de los componentes: Principal, Secundaria y Parche.
+Pasar de PostgreSQL 17 a 18 representa un incremento a la versión Principal por lo que implica alteraciones mayores a la arquitectura del motor de la bd, por lo que un contenedor de la versión 18 no puede leer volúmen de datos creado por la versión 17
