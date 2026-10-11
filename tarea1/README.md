@@ -120,3 +120,21 @@ No se usaba el Dockerfile viejo ya que como se observa a pesar de ejecutar el co
 
 El versionado semántico es un sistema  estámdar para numerar las versiones del software basándose en la estructura de los componentes: Principal, Secundaria y Parche.
 Pasar de PostgreSQL 17 a 18 representa un incremento a la versión Principal por lo que implica alteraciones mayores a la arquitectura del motor de la bd, por lo que un contenedor de la versión 18 no puede leer volúmen de datos creado por la versión 17
+
+---
+
+## Otro stack: MySQL + phpMyAdmin
+
+| Característica | PostgreSQL + Adminer | MySQL + phpMyAdmin |
+| :--- | :--- | :--- |
+| Estado de Salud (healthy) | ambas lo tienen | ambas lo tienen |
+| Puerto de su interfaz | 127.0.0.1:8000 | via localhost en la web|
+| Dockerfile | No se utiliza en l aversion 18 ya que se levantan los contenedores desde las imagenes | No se requiere ya que se especifica que las imagenes ya tienen lo necesario |
+
+La versión LTS (Long Term Support) Son versiones enfocadas exclusivamente en la estabilidad, seguridad y fiabilidad. No reciben nuevas características una vez lanzadas, sino únicamente correcciones de errores
+
+Innovation (Innovación): Son versiones de ciclo de vida corto que se liberan frecuentemente para introducir nuevas funcionalidades, mejoras de rendimiento o cambios arquitectónicos. Están pensadas para entornos de desarrollo o proyectos que requieren acceso temprano a las últimas tecnologías antes de que se consoliden en la siguiente versión LTS
+
+Por qué usar mysql:9.7.2 en lugar de mysql:latest
+
+El escribir la versión directamente asegura que el entorno de desarrollo se idéntico en cualquier PC, por lo que si otro desarrrollador clona el proyecto levvantará el mismo motor y no la última versión de este usuario, así mismo previene rupturas con el tiempo y las nuevas versiones que se lanzen posteriormente
