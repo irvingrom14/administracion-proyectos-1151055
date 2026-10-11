@@ -63,11 +63,38 @@ Usted eligió una al crear su repositorio. Investigue:**
 
   a)  Los dos grandes tipos. Qué es una licencia permisiva (MIT, BSD, Apache 2.0) y qué es una copyleft (GPL, LGPL, AGPL). Una tabla con lo que permite y lo que exige cada una.
 
+Las licencias permitivas se caracterizan por ser de software libre con requisios mínimos acerca de cómo redistribuir dicho software ofreciendo la máxima libertad a los usuarios, mientras que las licencias de tipo copyleft se enfocan en crear un programa que no tenga restricciones, requieriendo que odas las versiones que se le realicen también sean gratuitas utilizando las leyes de los derechos de autor para garantizar esta libertad para siempre
+
+| Acción | Licencias Permisivas| Licencias Copyleft  |
+| :--- | :--- | :--- |
+| Copiar y usar el código | Sí, sin restricciones. | Sí, sin restricciones. |
+| Modificar el código fuente | Sí, puedes cambiar lo que quieras. | Sí, puedes cambiar lo que quieras. |
+| Uso comercial | Sí, puedes usarlo en productos que generen dinero. | Sí, el uso comercial está permitido (vender soporte, binarios, etc.). |
+| Cerrar el código modificado | Sí. Puedes crear un software privado y no mostrar tus cambios a nadie. | No. Si distribuyes el software, tus modificaciones deben ser públicas y abiertas. |
+| Integrar en software propietario | Sí. Tu código cerrado puede devorar el código permisivo sin "contagiarse". | No. El código copyleft exige que todo el producto final se vuelva de código abierto (excepto ciertas librerías en LGPL). |
+| Ofrecerlo como servicio en la nube | Sí. No tienes que liberar nada. | Depende. Con GPL/LGPL sí puedes; con AGPL estás obligado a liberar el código de tu plataforma. |
+| Exigencia principal | Dar crédito. Mantener el aviso de copyright y los nombres de los autores originales. | Mantener la libertad. Compartir el código fuente modificado bajo la misma licencia original. |
+
+
   b) Su elección. Por qué su repositorio usa MIT, qué ventajas tiene y qué cambiaría si hubiera elegido GPL.
+
+Ya que permite que el código se integre en cualquier ecosistema además de su flexibilidad y adopción universal ya que se puede utilizar el código en cualquier tipo de proyectos
 
   c) Un caso real, a elegir, en que la decisión de la empresa dueña de un proyecto llevó a sus usuarios a crear o adoptar una alternativa:
     – MySQL, que pasó a manos de Oracle, y MariaDB.
     – El JDK de Oracle, que empezó a cobrarse para uso comercial, y OpenJDK o Amazon Corretto.
     – CentOS, que Red Hat sustituyó por CentOS Stream, y AlmaLinux o Rocky Linux.
     Cuente qué pasó y cuándo, qué licencia tenía el proyecto, y la clave: por qué esa licencia permitió
-    que la alternativa existiera sin pedirle permiso a nadie.   
+    que la alternativa existiera sin pedirle permiso a nadie. 
+
+MySQL pasa a estar en manos de Oracle
+
+En 2009 Oracle anunció la compra de Sun Microsystems lo que implicaba que MySQL sería parte de Oracle, lo cual asustó a los usuarios de código abierto porque pensaron que cambiaría las reglas para forzar a las empresas a pagar por el servicio
+
+Sin embargo Monty Widenius justo antes de renunciar a la compañía decidió tomar el código fuente de MySQL y mediante una bifurcación exacta (fork) lo nombró MariaDB, con el objetivo de mantener viva la base de datos de manera 100% transparente y libre
+
+Contaba con la licencia GPL por lo que a pesar de que Oracle compró la marca de MySQL no podía cambiar el código fuente legal debido a esta licencia por lo que el código ya era propiedad pública haciendo valer su derecho legal a la bifurcación por cualquier usuario
+
+* Tal, L. (2020, 16 julio). Open Source Licenses: Types and Comparison. Snyk. https://snyk.io/articles/open-source-licenses/
+
+* Krohalev, R. (2026, 29 septiembre). Software licenses explained: MIT, BSD, Apache, GPL. Shakuro. https://shakuro.com/blog/software-licenses-explained  
